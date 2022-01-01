@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+/* ici on a la police qui s'applique sur le  body  font family police du body; 
+  padding marge à l'intérieur du body  pour les
+Enlever on utlise  les marges externes pour les retirer nous le style margin 0 et padding  */
+body{
+    padding: 0 2%;
+    margin: 0;
+    font-family: "Noto Sans Mono",serif;
+} 
+/* ici on utilise les flex box pour pouvoir aligner les élément du menu et du profile fixer la barre de nav
+avec position sticky*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fff;
+    position: sticky;
+    top: 0;
+    
+
+} 
+/* ici on utilise on uliser pour aligner le profil et nom*/
+nav .Profile {
+    display: flex;
+    align-items: center;
+    
+}
+/* ici on utilise pour modifier la taille de l'image*/
+nav .Profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    
+}
+/* ici on utilise pour décoller l'image et du titre*/
+nav .Profile h1 {
+    margin-left: 10px;
+   font-size: 15px;
+    
+}
+/* ici on utilise pour enlever les point et aligner la liste bare de nav*/
+nav ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+/* ici on utilise pour creer un espacement entre les liste des barres de nav*/
+nav ul li {
+    margin-left: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    
+}
+/* ici on utilise pour changer l'élément quand le curseur est pointé
+    sur la barre*/
+nav ul li:hover{
+    border-bottom: 1px solid #000;
+}
+.corps_text {
+
+    margin: 4%;
+    
+}
+.corps_text header{
+    margin-top: 5%;
+    max-width: 80%;
+}
+
+.corps_text header h1{
+margin: 0;
+text-transform: uppercase;
+font-family: "Oswald", sans-serif;
+font-size: 2vw;
+}
+.corps_text header p{
+    line-height: 30px;
+    color: #818181;
+}
+.corps_text header button{
+    background-color:inherit;
+    border: none;
+    outline: none;
+    padding: 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    
+}
+
+ .corps_text header button:hover{ 
+   color: #ccc;
+   border-bottom-color: #0000;
+
+   /* ici on utilise le selecteur assurer l'occupation de l'image 
+   dans le body */
+  
+}
+.corps_text.presentation-image img{
+    max-width: 100%;
+    height: auto;
+   
+    /* ici on utilise le selecteur pour espacer l image*/
+}
+.corps_text.presentation-image{
+    margin-top: 80%;
+}
+/* ici on utilise le selecteur pour espacer le h1 et image*/
+.projet{
+    margin-top: 10%;
+}
+
+/* ici on utilise le selecteur pour mettre en majuscule le titre H1*/
+.projet h1{
+    font-family: 'oswalde',sans-serif;
+    text-transform: uppercase;
+    font-size: 2vw;
+       
+}
+/* ici on utilise le selecteur pour aligner les projet réalisé*/
+.projet.projet {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    
+}
+/* ici on utilise le selecteur pour aligner les projet réalisé*/
+
+.projet.projet h4{
+    margin: 0px;
+    text-transform: uppercase;
+    
+}
+/* ici on utilise le selecteur pour aligner les sous titre  des projet réalisé
+*/
+.projet.projet.team{
+    font-size: 15px;
+    margin-left: 0;
+    margin: 0%;
+    
+    
+}
+/* ici on utilise le selecteur pour traiter la class description
+*/
+.projet.projet.team p{
+   margin-right: 15px;
+   margin: 0%;
+   font-size: 15px;
+   font-family: monospace;
+   width: 250px;
+   text-align: left;
+   color: rgb(255, 127, 240);
+   margin-top:5%;
+   padding: 10px;
+   
+
+}
+/* ici on utilise le selecteur pour traiter la  date 
+*/
+.projet.projet.team.date p {
+    text-transform: uppercase;
+    
+ }
+/* footer 
+*/
+ footer{ 
+    margin-top:5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+
+
+    
+ }
+
+   
+ /* ici on utilise le selecteur presentation image
+ */
+
+.corps_text .presentation{
+    filter: brightness(50%);
+    margin-left: 0%;
+    margin-right: 0%;
+
+    
+    
+    
+
+    
+   /* ici on utilise le selecteur 
+   media querie pour asurer les responsive pour que la page s'adapte sur web et sur le mobile
+   */
+}
+@media screen and ( max-width:700px){
+
+nav{
+    justify-content: center;
+}
+nav ul {
+    display: none;
+}
+
